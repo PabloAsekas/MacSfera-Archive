@@ -1,0 +1,672 @@
+################################################################################
+#                                 PRIVACY RULES                                #
+#               * OSX EL CAPITAN - NO CONNECTIONS TO CUPPERTINO *              #
+#  MIX OF DIFFERENT /etc/hosts FILES I'VE FOUND. 80% OF THE ENTRIES CAME FROM  #
+#     MY OWN. OSX SENDS HUGE AMMOUNT OF REQUESTS TO CUPPERTINO EVENT WHEN      #
+#       SPOTLIGHT SUGGESTIONS, ICLOUD, AND OTHER SERVICES ARE DISABLED         #
+#  USE IT IF YOU DON'T LIKE OSX CALLING HOME WHEN YOU DON'T WANT IT TO HAPPEN  #
+#     NO CONNECTIONS TO APPLE SERVERS REPORTED BY MY FIREWALL FOR 2 MONTHS     #
+################################################################################
+
+# Note this will completely disable: icloud (mail, calendars, contacts), itunes, 
+# Maps app and others.
+
+127.0.0.1 apple-finance.query.yahoo.com                                 # stocks
+
+127.0.0.1 mzstatic.com                                                # appstore
+127.0.0.1 r.mzstatic.com                                              # appstore
+127.0.0.1 a1856.da1.akamai.net                                        # appstore
+127.0.0.1 r.mzstatic.com.edgesuite.net                                # appstore
+
+127.0.0.1 ocsp.apple.com                                                  # oscp
+127.0.0.1 akamaiedge.net                                                  # oscp
+127.0.0.1 e8218.dscb1.akamaiedge.net                                      # oscp
+127.0.0.1 sr.symcd.com                                                    # oscp
+127.0.0.1 gv.symcd.com                                                    # oscp
+127.0.0.1 ocsp-ds.ws.symantec.com.edgekey.net                             # oscp
+127.0.0.1 e6845.dscb1.akamaiedge.net                                      # oscp
+127.0.0.1 crl-ds.ws.symantec.com.edgekey.net                              # oscp
+127.0.0.1 rapidssl-aia.geotrust.com                                       # oscp
+127.0.0.1 e6845.dscb1.akamaiedge.net                                      # oscp
+127.0.0.1 cs9.wac.phicdn.net                                              # oscp
+127.0.0.1 ocsp.digicert.com                                               # oscp
+
+127.0.0.1 pancake.apple.com                                      # rtcreportingd
+127.0.0.1 apple-dns.net                                                   # fmfd
+127.0.0.1 icloud.apple-dns.net                                            # fmfd
+127.0.0.1 edge.icloud.apple-dns.net                                       # fmfd
+
+127.0.0.1 identity.ess.apple.com                             # identityservicesd
+127.0.0.1 identity.ess.apple.com.akadns.net                  # identityservicesd
+127.0.0.1 time.apple.com                                                   # ntp
+127.0.0.1 time.asia.apple.com                                              # ntp
+127.0.0.1 time.euro.apple.com                                              # ntp
+
+127.0.0.1 p01-calendars.icloud.com                                    # calendar
+127.0.0.1 p02-calendars.icloud.com                                    # calendar
+127.0.0.1 p03-calendars.icloud.com                                    # calendar
+127.0.0.1 p04-calendars.icloud.com                                    # calendar
+127.0.0.1 p05-calendars.icloud.com                                    # calendar
+127.0.0.1 p06-calendars.icloud.com                                    # calendar
+127.0.0.1 p07-calendars.icloud.com                                    # calendar
+127.0.0.1 p08-calendars.icloud.com                                    # calendar
+127.0.0.1 p09-calendars.icloud.com                                    # calendar
+127.0.0.1 p10-calendars.icloud.com                                    # calendar
+127.0.0.1 p11-calendars.icloud.com                                    # calendar
+127.0.0.1 p12-calendars.icloud.com                                    # calendar
+127.0.0.1 p13-calendars.icloud.com                                    # calendar
+127.0.0.1 p14-calendars.icloud.com                                    # calendar
+127.0.0.1 p15-calendars.icloud.com                                    # calendar
+127.0.0.1 p16-calendars.icloud.com                                    # calendar
+127.0.0.1 p17-calendars.icloud.com                                    # calendar
+127.0.0.1 p18-calendars.icloud.com                                    # calendar
+127.0.0.1 p19-calendars.icloud.com                                    # calendar
+127.0.0.1 p20-calendars.icloud.com                                    # calendar
+127.0.0.1 p21-calendars.icloud.com                                    # calendar
+127.0.0.1 p22-calendars.icloud.com                                    # calendar
+127.0.0.1 p23-calendars.icloud.com                                    # calendar
+127.0.0.1 p24-calendars.icloud.com                                    # calendar
+127.0.0.1 p25-calendars.icloud.com                                    # calendar
+127.0.0.1 p26-calendars.icloud.com                                    # calendar
+127.0.0.1 p27-calendars.icloud.com                                    # calendar
+127.0.0.1 p28-calendars.icloud.com                                    # calendar
+127.0.0.1 p29-calendars.icloud.com                                    # calendar
+127.0.0.1 p30-calendars.icloud.com                                    # calendar
+127.0.0.1 p31-calendars.icloud.com                                    # calendar
+127.0.0.1 p01-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p02-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p03-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p04-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p05-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p06-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p07-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p08-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p09-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p10-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p11-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p12-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p13-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p14-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p15-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p16-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p17-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p18-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p19-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p20-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p21-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p22-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p23-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p24-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p25-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p26-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p27-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p28-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p29-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p30-calendars.icloud.com.akadns.net                         # calendar
+127.0.0.1 p31-calendars.icloud.com.akadns.net                         # calendar
+
+127.0.0.1 01-keyvalueservice.icloud.com                          # syncdefaultsd
+127.0.0.1 02-keyvalueservice.icloud.com                          # syncdefaultsd
+127.0.0.1 03-keyvalueservice.icloud.com                          # syncdefaultsd
+127.0.0.1 04-keyvalueservice.icloud.com                          # syncdefaultsd
+127.0.0.1 05-keyvalueservice.icloud.com                          # syncdefaultsd
+127.0.0.1 06-keyvalueservice.icloud.com                          # syncdefaultsd
+127.0.0.1 01-keyvalueservice-current.edge.icloud.apple-dns.net   # syncdefaultsd
+127.0.0.1 02-keyvalueservice-current.edge.icloud.apple-dns.net   # syncdefaultsd
+127.0.0.1 03-keyvalueservice-current.edge.icloud.apple-dns.net   # syncdefaultsd
+127.0.0.1 04-keyvalueservice-current.edge.icloud.apple-dns.net   # syncdefaultsd
+127.0.0.1 05-keyvalueservice-current.edge.icloud.apple-dns.net   # syncdefaultsd
+127.0.0.1 06-keyvalueservice-current.edge.icloud.apple-dns.net   # syncdefaultsd
+
+127.0.0.1 p06-availability.icloud.com                         # icloudhelper.xpc
+127.0.0.1 p02-availability.icloud.com                         # icloudhelper.xpc
+127.0.0.1 p03-availability.icloud.com                         # icloudhelper.xpc
+127.0.0.1 p04-availability.icloud.com                         # icloudhelper.xpc
+127.0.0.1 p05-availability.icloud.com                         # icloudhelper.xpc
+127.0.0.1 p06-availability.icloud.com                         # icloudhelper.xpc
+127.0.0.1 p01-availability.icloud.com.akadns.net              # icloudhelper.xpc
+127.0.0.1 p02-availability.icloud.com.akadns.net              # icloudhelper.xpc
+127.0.0.1 p03-availability.icloud.com.akadns.net              # icloudhelper.xpc
+127.0.0.1 p04-availability.icloud.com.akadns.net              # icloudhelper.xpc
+127.0.0.1 p05-availability.icloud.com.akadns.net              # icloudhelper.xpc
+127.0.0.1 p06-availability.icloud.com.akadns.net              # icloudhelper.xpc
+127.0.0.1 p01-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p02-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p03-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p04-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p05-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p06-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p01-quota.icloud.com                                # icloudhelper.xpc
+127.0.0.1 p02-quota.icloud.com                                # icloudhelper.xpc
+127.0.0.1 p03-quota.icloud.com                                # icloudhelper.xpc
+127.0.0.1 p04-quota.icloud.com                                # icloudhelper.xpc
+127.0.0.1 p05-quota.icloud.com                                # icloudhelper.xpc
+127.0.0.1 p06-quota.icloud.com                                # icloudhelper.xpc
+127.0.0.1 p01-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p02-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p03-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p04-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p05-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p06-quota-current.edge.icloud.apple-dns.net         # icloudhelper.xpc
+127.0.0.1 p01-mailws.icloud.com                               # icloudhelper.xpc
+127.0.0.1 p02-mailws.icloud.com                               # icloudhelper.xpc
+127.0.0.1 p03-mailws.icloud.com                               # icloudhelper.xpc
+127.0.0.1 p04-mailws.icloud.com                               # icloudhelper.xpc
+127.0.0.1 p05-mailws.icloud.com                               # icloudhelper.xpc
+127.0.0.1 p06-mailws.icloud.com                               # icloudhelper.xpc
+127.0.0.1 p01-mailws.icloud.com.akadns.net                    # icloudhelper.xpc
+127.0.0.1 p02-mailws.icloud.com.akadns.net                    # icloudhelper.xpc
+127.0.0.1 p03-mailws.icloud.com.akadns.net                    # icloudhelper.xpc
+127.0.0.1 p04-mailws.icloud.com.akadns.net                    # icloudhelper.xpc
+127.0.0.1 p05-mailws.icloud.com.akadns.net                    # icloudhelper.xpc
+127.0.0.1 p06-mailws.icloud.com.akadns.net                    # icloudhelper.xpc
+
+127.0.0.1 a743.gi3.akamai.net                                    # photolibraryd
+
+127.0.0.1	gspe1.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe2.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe3.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe4.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe5.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe6.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe7.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe8.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe9.ls.apple.com                                # com.apple.geod.xpc
+127.0.0.1	gspe10.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe11.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe12.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe13.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe14.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe15.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe16.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe17.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe18.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe19.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe20.ls.apple.com                               # com.apple.geod.xpc
+127.0.0.1	gspe21.ls.apple.com                               # com.apple.geod.xpc
+
+127.0.0.1	gspe1.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe2.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe3.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe4.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe5.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe6.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe7.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe8.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe9.ls.apple.com.akadns.net                     # com.apple.geod.xpc
+127.0.0.1	gspe10.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe11.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe12.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe13.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe14.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe15.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe16.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe17.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe18.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe19.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe20.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+127.0.0.1	gspe21.ls.apple.com.akadns.net                    # com.apple.geod.xpc
+
+127.0.0.1	gspe1.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe2.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe3.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe4.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe5.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe6.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe7.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe8.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe9.ls.apple.com.edgesuite.net                  # com.apple.geod.xpc
+127.0.0.1	gspe10.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe11.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe12.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe13.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe14.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe15.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe16.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe17.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe18.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe19.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe20.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+127.0.0.1	gspe21.ls.apple.com.edgesuite.net                 # com.apple.geod.xpc
+
+127.0.0.1 p01-fmfmobile.icloud.com                                        # fmfd
+127.0.0.1 p02-fmfmobile.icloud.com                                        # fmfd
+127.0.0.1 p03-fmfmobile.icloud.com                                        # fmfd
+127.0.0.1 p04-fmfmobile.icloud.com                                        # fmfd
+127.0.0.1 p05-fmfmobile.icloud.com                                        # fmfd
+127.0.0.1 p06-fmfmobile.icloud.com                                        # fmfd
+127.0.0.1 p01-fmfmobile-current.edge.icloud.apple-dns.net                 # fmfd
+127.0.0.1 p02-fmfmobile-current.edge.icloud.apple-dns.net                 # fmfd
+127.0.0.1 p03-fmfmobile-current.edge.icloud.apple-dns.net                 # fmfd
+127.0.0.1 p04-fmfmobile-current.edge.icloud.apple-dns.net                 # fmfd
+127.0.0.1 p05-fmfmobile-current.edge.icloud.apple-dns.net                 # fmfd
+127.0.0.1 p06-fmfmobile-current.edge.icloud.apple-dns.net                 # fmfd
+
+127.0.0.1 us-courier.push.apple.com.akadns.net                            # apsd
+127.0.0.1 us-courier.push-apple.com.akadns.net                            # apsd
+127.0.0.1 us-courier.apple.com.akadns.net                                 # apsd
+127.0.0.1 push-apple.com.akadns.net                                       # apsd
+127.0.0.1 push-apple.com                                                  # apsd
+
+127.0.0.1 1-courier.push.apple.com                                        # apsd
+127.0.0.1 2-courier.push.apple.com                                        # apsd
+127.0.0.1 3-courier.push.apple.com                                        # apsd
+127.0.0.1 4-courier.push.apple.com                                        # apsd
+127.0.0.1 5-courier.push.apple.com                                        # apsd
+127.0.0.1 6-courier.push.apple.com                                        # apsd
+127.0.0.1 7-courier.push.apple.com                                        # apsd
+127.0.0.1 8-courier.push.apple.com                                        # apsd
+127.0.0.1 9-courier.push.apple.com                                        # apsd
+127.0.0.1 10-courier.push.apple.com                                       # apsd
+127.0.0.1 11-courier.push.apple.com                                       # apsd
+127.0.0.1 12-courier.push.apple.com                                       # apsd
+127.0.0.1 13-courier.push.apple.com                                       # apsd
+127.0.0.1 14-courier.push.apple.com                                       # apsd
+127.0.0.1 15-courier.push.apple.com                                       # apsd
+127.0.0.1 16-courier.push.apple.com                                       # apsd
+127.0.0.1 17-courier.push.apple.com                                       # apsd
+127.0.0.1 18-courier.push.apple.com                                       # apsd
+127.0.0.1 19-courier.push.apple.com                                       # apsd
+127.0.0.1 20-courier.push.apple.com                                       # apsd
+127.0.0.1 21-courier.push.apple.com                                       # apsd
+127.0.0.1 22-courier.push.apple.com                                       # apsd
+127.0.0.1 23-courier.push.apple.com                                       # apsd
+127.0.0.1 24-courier.push.apple.com                                       # apsd
+127.0.0.1 25-courier.push.apple.com                                       # apsd
+127.0.0.1 26-courier.push.apple.com                                       # apsd
+127.0.0.1 27-courier.push.apple.com                                       # apsd
+127.0.0.1 28-courier.push.apple.com                                       # apsd
+127.0.0.1 29-courier.push.apple.com                                       # apsd
+127.0.0.1 30-courier.push.apple.com                                       # apsd
+127.0.0.1 31-courier.push.apple.com                                       # apsd
+127.0.0.1 32-courier.push.apple.com                                       # apsd
+127.0.0.1 33-courier.push.apple.com                                       # apsd
+127.0.0.1 34-courier.push.apple.com                                       # apsd
+127.0.0.1 35-courier.push.apple.com                                       # apsd
+127.0.0.1 36-courier.push.apple.com                                       # apsd
+127.0.0.1 37-courier.push.apple.com                                       # apsd
+127.0.0.1 38-courier.push.apple.com                                       # apsd
+127.0.0.1 39-courier.push.apple.com                                       # apsd
+127.0.0.1 40-courier.push.apple.com                                       # apsd
+127.0.0.1 41-courier.push.apple.com                                       # apsd
+127.0.0.1 42-courier.push.apple.com                                       # apsd
+127.0.0.1 43-courier.push.apple.com                                       # apsd
+127.0.0.1 44-courier.push.apple.com                                       # apsd
+127.0.0.1 45-courier.push.apple.com                                       # apsd
+127.0.0.1 46-courier.push.apple.com                                       # apsd
+127.0.0.1 47-courier.push.apple.com                                       # apsd
+127.0.0.1 48-courier.push.apple.com                                       # apsd
+127.0.0.1 49-courier.push.apple.com                                       # apsd
+127.0.0.1 50-courier.push.apple.com                                       # apsd
+
+127.0.0.1 1.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 2.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 3.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 4.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 5.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 6.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 7.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 8.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 9.courier-push-apple-com.akadns.net                             # apsd
+127.0.0.1 10.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 11.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 12.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 13.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 14.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 15.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 16.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 17.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 18.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 19.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 20.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 21.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 22.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 23.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 24.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 25.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 26.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 27.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 28.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 29.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 30.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 31.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 32.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 33.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 34.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 35.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 36.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 37.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 38.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 39.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 40.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 41.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 42.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 43.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 44.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 45.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 46.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 47.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 48.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 49.courier-push-apple-com.akadns.net                            # apsd
+127.0.0.1 50.courier-push-apple-com.akadns.net                            # apsd
+
+127.0.0.1 1.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 2.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 3.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 4.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 5.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 6.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 7.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 8.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 9.courier-sandbox-push-apple.com.akadns.net                     # apsd
+127.0.0.1 10.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 11.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 12.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 13.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 14.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 15.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 16.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 17.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 18.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 19.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 20.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 21.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 22.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 23.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 24.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 25.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 26.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 27.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 28.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 29.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 30.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 31.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 32.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 33.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 34.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 35.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 36.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 37.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 38.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 39.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 40.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 41.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 42.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 43.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 44.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 45.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 46.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 47.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 48.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 49.courier-sandbox-push-apple.com.akadns.net                    # apsd
+127.0.0.1 50.courier-sandbox-push-apple.com.akadns.net                    # apsd
+
+127.0.0.1 1-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 2-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 3-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 4-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 5-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 6-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 7-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 8-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 9-courier.sandbox.push.apple.com                                # apsd
+127.0.0.1 10-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 11-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 12-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 13-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 14-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 15-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 16-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 17-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 18-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 19-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 20-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 21-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 22-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 23-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 24-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 25-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 26-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 27-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 28-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 29-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 30-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 31-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 32-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 33-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 34-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 35-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 36-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 37-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 38-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 39-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 40-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 41-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 42-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 43-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 44-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 45-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 46-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 47-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 48-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 49-courier.sandbox.push.apple.com                               # apsd
+127.0.0.1 50-courier.sandbox.push.apple.com                               # apsd
+
+127.0.0.1 itunes.apple.com                                           # App Store
+127.0.0.1 p18-buy.itunes.apple.com                                   # App Store
+127.0.0.1 su.itunes.apple.com                                        # App Store
+127.0.0.1 p01-imap.mail.me.com                                   # Mail / iCloud
+127.0.0.1 p02-imap.mail.me.com                                   # Mail / iCloud
+127.0.0.1 p03-imap.mail.me.com                                   # Mail / iCloud
+127.0.0.1 p04-imap.mail.me.com                                   # Mail / iCloud
+127.0.0.1 p05-imap.mail.me.com                                   # Mail / iCloud
+127.0.0.1 p06-imap.mail.me.com                                   # Mail / iCloud
+127.0.0.1 gspe1-ssl.ls.apple.com                                 # Mail / iCloud
+127.0.0.1 gspe35-ssl.ls.apple.com                                # Mail / iCloud
+127.0.0.1 gspe35-ssl.ls.apple.com                                # Mail / iCloud
+127.0.0.1 gsa.apple.com
+127.0.0.1 apple.com
+127.0.0.1 www.apple.com
+127.0.0.1 api.smoot.apple.com
+127.0.0.1 smoot.apple.com
+127.0.0.1 crl.apple.com
+127.0.0.1 swscan.apple.com                            # SoftwareUpdate.framework
+127.0.0.1 qa2-int-swscan.apple.com                    # SoftwareUpdate.framework
+127.0.0.1 swcdnlocator.apple.com                      # SoftwareUpdate.framework
+127.0.0.1 validation.isu.apple.com                    # SoftwareUpdate.framework
+127.0.0.1 help.apple.com                                    # HelpData.framework
+127.0.0.1 helpqt.apple.com                                  # HelpData.framework
+127.0.0.1 helposx.apple.com                                 # HelpData.framework
+127.0.0.1 support.apple.com                                 # HelpData.framework
+127.0.0.1 lookup-api.apple.com                                # Lookup.framework
+127.0.0.1 pubsbuild.apple.com                                   # docsetinstalld
+127.0.0.1 extensions.apple.com                                # Safari.framework
+127.0.0.1 stage-extensions.apple.com                          # Safari.framework
+127.0.0.1 plugins.apple.com                                   # Safari.framework
+127.0.0.1 suggest.yandex.net                                  # Safari.framework
+127.0.0.1 suggestion.baidu.com                                # Safari.framework
+127.0.0.1 api.bing.com                                        # Safari.framework
+127.0.0.1 sugg.search.yahoo.net                               # Safari.framework
+127.0.0.1 userpub.itunes.apple.com                                  # iBooks.app
+127.0.0.1 vocabulary.itunes.apple.com                               # iBooks.app
+127.0.0.1 gcsp.clb.cddbp.net                                        # iTunes.app
+127.0.0.1 gcsp.cddbp.net                                            # iTunes.app
+127.0.0.1 members.mac.com                                           # iTunes.app
+127.0.0.1 members.me.com                                            # iTunes.app
+127.0.0.1 safebrowsing.clients.google.com                           # iTunes.app
+127.0.0.1 nikerunning.nike.com                                      # iTunes.app
+127.0.0.1 s.mzstatic.com                                            # iTunes.app
+127.0.0.1 ax.itunes.apple.com                                       # iTunes.app
+127.0.0.1 limit.itunesu.com                                         # iTunes.app
+127.0.0.1 configuration.apple.com                        # Multiple applications
+127.0.0.1 iforgot.apple.com                                             # iCloud
+127.0.0.1 identity.apple.com                                  # AppleIDAuthAgent
+127.0.0.1 appleid.apple.com                                  # Accounts.prefPane
+127.0.0.1 reg1.apple.com                                   # Setup Assistant.app
+127.0.0.1 littlebuddy.apple.com                            # Setup Assistant.app
+127.0.0.1 iadsdk.apple.com                                   # iAdCore.framework
+127.0.0.1 gil.apple.com                             # InternetAccounts.framework
+127.0.0.1 fdereg.apple.com                                  # Security.framework
+127.0.0.1 timestamp.apple.com                               # Security.framework
+127.0.0.1 init-p01st.push.apple.com                 # ApplePushService.framework
+127.0.0.1 init-s01st.push.apple.com                 # ApplePushService.framework
+127.0.0.1 albert.apple.com                          # ApplePushService.framework
+127.0.0.1 www.me.com                                          # AOSKit.framework
+127.0.0.1 setup.icloud.com                                    # AOSKit.framework
+127.0.0.1 icloud.com                                          # AOSKit.framework
+127.0.0.1 init.ess.apple.com                            # IMFoundation.framework
+127.0.0.1 init-p01md.apple.com                          # IMFoundation.framework
+127.0.0.1 scento.apple.com                                   # Install.framework
+127.0.0.1 mac-services.apple.com                            # MailCore.framework
+127.0.0.1 idisk.mac.com                                   # OSServices.framework
+127.0.0.1 validation.apple.com                       # PrintingPrivate.framework
+127.0.0.1 qtpartners.apple.com                          # RTCReporting.framework
+127.0.0.1 public.me.com                                 # ScreenReader.framework
+127.0.0.1 pm-members.mac.com                                      # btmmdiagnose
+127.0.0.1 marimba.apple.com                               # Slideshows.framework
+127.0.0.1 gsp2.apple.com                                  # Slideshows.framework
+127.0.0.1 porco.apple.com                                    # StoreUI.framework
+127.0.0.1 iprofiles.apple.com                              # cloudconfigurationd
+127.0.0.1 suconfig.apple.com                               # cloudconfigurationd
+127.0.0.1 radarsubmissions.apple.com                            # SubmitDiagInfo
+127.0.0.1 messagetracer-whitelist.apple.com                     # SubmitDiagInfo
+127.0.0.1 speedtracer.apple.com                           # Problem Reporter.app
+127.0.0.1 tracerx-radars.apple.com                        # Problem Reporter.app
+127.0.0.1 icalserver.apple.com                               # ManagedClient.app
+127.0.0.1 bugreport.apple.com                                   # IMLoggingAgent
+127.0.0.1 init.itunes.apple.com                          # CommerceKit.framework
+127.0.0.1 ax.init.itunes.apple.com                       # CommerceKit.framework
+127.0.0.1 phobos.apple.com                               # CommerceKit.framework
+127.0.0.1 sandbox.itunes.apple.com                       # CommerceKit.framework
+127.0.0.1 static.gc.apple.com                                # GameKit.framework
+127.0.0.1 sandbox.gc.apple.com                               # GameKit.framework
+127.0.0.1 td1.apple.com                                      # GameKit.framework
+127.0.0.1 z2r0y.apple.com                                    # GameKit.framework
+127.0.0.1 td2.apple.com                                      # GameKit.framework
+127.0.0.1 df6ed.apple.com                                    # GameKit.framework
+127.0.0.1 td3.apple.com                                      # GameKit.framework
+127.0.0.1 cp7vi.apple.com                                    # GameKit.framework
+127.0.0.1 td4.apple.com                                      # GameKit.framework
+127.0.0.1 gz8rm.apple.com                                    # GameKit.framework
+127.0.0.1 link.gc.apple.com                                  # GameKit.framework
+127.0.0.1 init.gc.apple.com                                  # GameKit.framework
+127.0.0.1 redcarpet.apple.com                                   # HelpViewer.app
+127.0.0.1 static.ips.apple.com                                # Social.framework
+127.0.0.1 internalcheck.apple.com               # CrashReporterSupport.framework
+127.0.0.1 guzzoni.apple.com                        # AssistantServices.framework
+127.0.0.1 hello.connectivity.me.com                              # mDNSResponder
+127.0.0.1 gateway.push.apple.com                                         # emond
+127.0.0.1 push.apple.com                                              # networkd
+127.0.0.1 gsp1-ssl.apple.com                                         # locationd
+127.0.0.1 gsp2-ssl.apple.com                                         # locationd
+127.0.0.1 gsp3-ssl.apple.com                                         # locationd
+127.0.0.1 gsp4-ssl.apple.com                                         # locationd
+127.0.0.1 gsp5-ssl.apple.com                                         # locationd
+127.0.0.1 gsp6-ssl.apple.com                                         # locationd
+127.0.0.1 gsp7-ssl.apple.com                                         # locationd
+127.0.0.1 gsp8-ssl.apple.com                                         # locationd
+127.0.0.1 gsp9-ssl.apple.com                                         # locationd
+127.0.0.1 gsp10-ssl.apple.com                                        # locationd
+127.0.0.1 gs-loc.apple.com                                           # locationd
+127.0.0.1 iphone-ld.apple.com                                        # locationd
+127.0.0.1 cl-dev.apple.com                                           # locationd
+127.0.0.1 cl1.apple.com                                              # locationd
+127.0.0.1 cl2.apple.com                                              # locationd
+127.0.0.1 cl3.apple.com                                              # locationd
+127.0.0.1 gspa35-ssl.ls.apple.com                        # GeoServices.framework
+127.0.0.1 gsp-ssl.ls.apple.com                           # GeoServices.framework
+127.0.0.1 gspa21.ls.apple.com                            # GeoServices.framework
+127.0.0.1 gsp1.apple.com                                 # GeoServices.framework
+127.0.0.1 gsps36.ls.apple.com                            # GeoServices.framework
+127.0.0.1 gs.apple.com                                  # MobileDevice.framework
+127.0.0.1 appleconnect.apple.com                        # MobileDevice.framework
+127.0.0.1 sso.corp.apple.com                            # MobileDevice.framework
+127.0.0.1 lookup-api.apple.com                                  # Dictionary.app
+127.0.0.1 copyfight.corante.com                      # CaptiveSystemAgent.plugin
+127.0.0.1 apsu.apple.com                                   # AirPort Utility.app
+127.0.0.1 apfw.apple.com                                   # AirPort Utility.app
+127.0.0.1 metrics.apple.com                                      # App Store.app
+127.0.0.1 wu-calculator.apple.com                               # Calculator.app
+127.0.0.1 icalbridge.apple.com                                    # Calendar.app
+127.0.0.1 feedback.apple.com                                          # Mail.app
+127.0.0.1 manifest2.inn.rdca.ls.apple.com                             # Maps.app
+127.0.0.1 slogin.oscar.aol.com                                    # Messages.app
+127.0.0.1 api.oscar.aol.com                                       # Messages.app
+127.0.0.1 gdata.youtube.com                               # QuickTime Player.app
+127.0.0.1 uploads.gdata.youtube.com                       # QuickTime Player.app
+127.0.0.1 maps.apple.com                                  # QuickTime Player.app
+127.0.0.1 depot.info.apple.com                          # System Information.app
+127.0.0.1 iclab.apple.com                              # QuickTime Plugin.plugin
+127.0.0.1 aolauth.icloud.com                                     # AIM.imservice
+127.0.0.1 aolauthtest.icloud.com                                 # AIM.imservice
+127.0.0.1 api.screenname.aol.com                                 # AIM.imservice
+127.0.0.1 startpage.aol.com                                      # AIM.imservice
+127.0.0.1 my.screenname.aol.com                                  # AIM.imservice
+127.0.0.1 api.login.aol.com                                      # AIM.imservice
+127.0.0.1 developer.aim.com                                      # AIM.imservice
+127.0.0.1 login.oscar.aol.com                                    # AIM.imservice
+127.0.0.1 ars.oscar.aol.com                                      # AIM.imservice
+127.0.0.1 aimhttp.oscar.aol.com                                  # AIM.imservice
+127.0.0.1 talk.google.com                              # Jabber.impreferencepane
+127.0.0.1 msg.yahoo.com                                  # Yahoo.imserviceplugin
+127.0.0.1 api.login.yahoo.com                            # Yahoo.imserviceplugin
+127.0.0.1 login.yahoo.com                                # Yahoo.imserviceplugin
+127.0.0.1 developer.messenger.yahooapis.com              # Yahoo.imserviceplugin
+127.0.0.1 displayimage.messenger.yahooapis.com           # Yahoo.imserviceplugin
+127.0.0.1 ftrelay.messenger.yahooapis.com                # Yahoo.imserviceplugin
+127.0.0.1 attwifi.apple.com                              # CaptiveNetworkSupport
+127.0.0.1 proddav.apple.com                                  # iWork.qlgenerator
+127.0.0.1 rabat.apple.com                                    # iWork.qlgenerator
+127.0.0.1 members.btmm.icloud.com                     # Shared Screen Viewer.app
+127.0.0.1 idisk.me.com                                          # webdav_fs.kext
+127.0.0.1 contacts.icloud.com                            # AddressBook.framework
+127.0.0.1 ink.apple.com                                        # Print.framework
+127.0.0.1 gir.apple.com                             # InstallerPlugins.framework
+127.0.0.1 photocast.me.com                               # ScreenSaver.framework
+127.0.0.1 gallery.me.com                                     # WebCore.framework
+127.0.0.1 tid.canon.com                                          # PTPCamera.app
+127.0.0.1 fmip.me.com                                # AOSNotification.framework
+127.0.0.1 courier.sandbox.push.apple.com                                  # apsd
+127.0.0.1 courier.push.apple.com                                          # apsd
+127.0.0.1 sandbox.push.apple.com                                          # apsd
+127.0.0.1 trackingshipment.apple.com                   # DataDetectors.framework
+127.0.0.1 event.apple.com                              # DataDetectors.framework
+127.0.0.1 gsp17-ssl.apple.com                            # GeoServices.framework
+127.0.0.1 gsp17-2-ssl.apple.com                          # GeoServices.framework
+127.0.0.1 webservices.mac.com                              # ISSupport.framework
+127.0.0.1 m3.mac.com                                       # ISSupport.framework
+127.0.0.1 iphonesubmissions.apple.com              # AppleMobileDeviceHelper.app
+127.0.0.1 iphonediags.apple.com                    # AppleMobileDeviceHelper.app
+127.0.0.1 vinkjo8.apple.com                    # SetupAssistantSupport.framework
+127.0.0.1 secure.me.com                        # SetupAssistantSupport.framework
+127.0.0.1 turn.oscar.aol.com                         # VideoConference.framework
+127.0.0.1 apple-mobile.query.yahooapis.com                # WeatherKit.framework
+127.0.0.1 api.wunderground.com                            # WeatherKit.framework
+127.0.0.1 lookup.apple.com                                # WhitePages.framework
+127.0.0.1 wu.apple.com                                         # WidgetResources
+127.0.0.1 wu-quotes.apple.com                                  # WidgetResources
+127.0.0.1 iphone-wu.apple.com                                  # WidgetResources
+127.0.0.1 wu-stocks.apple.com                                  # WidgetResources
+127.0.0.1 wu-charts.apple.com                                  # WidgetResources
+127.0.0.1 wu-converter.apple.com                               # WidgetResources
+127.0.0.1 caldav.icloud.com                      # CalendarPersistence.framework
+127.0.0.1 ical.mac.com                           # CalendarPersistence.framework
+127.0.0.1 qtsoftware.apple.com                             # QuickTime.framework
+127.0.0.1 quicktimepro.apple.com                           # QuickTime.framework
+127.0.0.1 idmsauth-uat.corp.apple.com                   # Feedback Assistant.app
+127.0.0.1 idmsa.apple.com                               # Feedback Assistant.app
+127.0.0.1 appleconnect-uat.apple.com                    # Feedback Assistant.app
+127.0.0.1 appleseed-stage.apple.com                     # Feedback Assistant.app
+127.0.0.1 appleseed.apple.com                           # Feedback Assistant.app
+127.0.0.1 iforgot-uat.apple.com                         # Feedback Assistant.app
+127.0.0.1 xseedapps.apple.com                           # Feedback Assistant.app
+127.0.0.1 appleseed-temp.apple.com                      # Feedback Assistant.app
+127.0.0.1 crucio.apple.com                              # Feedback Assistant.app
+127.0.0.1 ac-at.apple.com                               # Feedback Assistant.app
+127.0.0.1 iforgott.apple.com                            # Feedback Assistant.app
+127.0.0.1 mobile-uat.corp.apple.com                     # Feedback Assistant.app
+127.0.0.1 idmswt.corp.apple.com                         # Feedback Assistant.app
+127.0.0.1 mobile.apple.com                              # Feedback Assistant.app
+127.0.0.1 privftp.apple.com                             # Feedback Assistant.app
+127.0.0.1 cssubmissions-uat.corp.apple.com              # Feedback Assistant.app
+127.0.0.1 cssubmissions.apple.com                       # Feedback Assistant.app
