@@ -74,14 +74,14 @@ header.cabecera {
 	width: 100%;
 }
 header.cabecera h1, header.cabecera h2 {
-	background: url(https://www.MacSfera.com/wp-content/themes/MacSfera/img/macsfera-logo.svg) no-repeat;
+	background: url(https://www.macsfera.com/wp-content/themes/MacSfera/img/macsfera-logo.svg) no-repeat;
 	margin: 70px auto;
 	width: 353px;
 	height: 86px;
 	text-indent: -9999px;
 }
 /*header.cabecera h1, header.cabecera h2 {
-	background: url(https://www.MacSfera.com/wp-content/themes/MacSfera/img/macsfera-realmadrid.svg) no-repeat;
+	background: url(https://www.macsfera.com/wp-content/themes/MacSfera/img/macsfera-realmadrid.svg) no-repeat;
 	margin: 70px auto;
 	width: 362px;
 	height: 90px;
@@ -501,7 +501,7 @@ section.articulos article .contenido blockquote {
 	background: #c14c4c;
 }
 section.articulos article .contenido blockquote:before {
-	background: url(https://www.MacSfera.com/wp-content/themes/MacSfera/img/quotes.svg) no-repeat;
+	background: url(https://www.macsfera.com/wp-content/themes/MacSfera/img/quotes.svg) no-repeat;
 	width: 65px;
 	height: 55px;
 	content: "";
@@ -970,7 +970,7 @@ footer.pie-de-pagina div div.izquierda span.logo {
 	width: 132px;
 	height: 28px;
 	display: inline-block;
-	background: url(https://www.MacSfera.com/wp-content/themes/MacSfera/img/macsfera-footer.svg) no-repeat -0px 0px;
+	background: url(https://www.macsfera.com/wp-content/themes/MacSfera/img/macsfera-footer.svg) no-repeat -0px 0px;
 	text-indent: -9999px;
 }
 footer.pie-de-pagina div div.izquierda div {
@@ -1653,7 +1653,7 @@ section.autor div ul li a {
 	}
 	footer.pie-de-pagina div div.izquierda span.logo {
 		width: 100%;
-		background: url(https://www.MacSfera.com/wp-content/themes/MacSfera/img/macsfera-footer.svg) no-repeat center;
+		background: url(https://www.macsfera.com/wp-content/themes/MacSfera/img/macsfera-footer.svg) no-repeat center;
 	}
 	footer.pie-de-pagina div div.social {
 		width: 95%;
